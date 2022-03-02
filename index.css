@@ -1,3 +1,12 @@
+body {
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
 /*td creates a grid*/
 
 td {
@@ -7,15 +16,11 @@ td {
   background-color: dodgerblue;
 }
 
-/* need the body to align in the center of the page with flexbox. Right now being held at center page by heigh and width. */
-
-body {
-  background-color: gray;
+#rematch {
+  background-color: white;
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
+  justify-content: flex-start;
 }
 
 /*every other square is black*/

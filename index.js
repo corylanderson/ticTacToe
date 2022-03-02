@@ -1,6 +1,6 @@
-//row and columns (think arrays 2d)
+const table = document.getElementById("table");
 
-//beginning of object
+const winningConditions = console.log("table", table);
 
 const ticTacToe = {
   players: ["x", "o"],
@@ -11,6 +11,7 @@ const ticTacToe = {
 
     [null, null, null],
   ],
+  currentPlayer: "x",
 };
 
 console.log("board start", ticTacToe.board);
@@ -35,20 +36,7 @@ bit X:
 
 */
 
-// table.addEventListener("click", clickTest);
-
-/*focus on event listeners for putting x or o in box - refer to pixelate and whack a mole. */
-
-//move method and event listener
-
-function clickTest(Event) {
-  console.log("clicked");
-}
-
-// playerMove: function (player, rowNumber, columnNumber) {},
-
-//clear method - can i call the original board?
-
+//add button
 function clearBoard() {
   ticTacToe.board = [
     [null, null, null],
@@ -56,3 +44,14 @@ function clearBoard() {
     [null, null, null],
   ];
 }
+
+table.addEventListener("click", function (event) {
+  console.log(event.target);
+  event.target.innerText = ticTacToe.currentPlayer;
+
+  if (ticTacToe.currentPlayer === "x") {
+    ticTacToe.currentPlayer = "o";
+  } else {
+    ticTacToe.currentPlayer = "x";
+  }
+});
