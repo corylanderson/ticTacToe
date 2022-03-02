@@ -1,0 +1,38 @@
+/*need to fix my board - make boxes cleaner. Right now they're hard coded and not responsive. I need to create a 3x3 grid*/
+.board {
+  box-sizing: border-box;
+  background-color: dodgerblue;
+  display: flex;
+  height: 360px;
+  width: 360px;
+  flex-wrap: wrap;
+  color: red;
+  font-weight: bold;
+}
+/*need to fix my board - make boxes cleaner. Right now they're hard coded and not responsive. Remove flex basis*/
+.cell {
+  display: flex;
+  flex-basis: 32.75%;
+  border: 1px solid black;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+}
+
+/* need the body to align in the center of the page with flexbox. Right now being held at center page by heigh and width. */
+
+body {
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+/*every other square is black*/
+
+.cell:nth-of-type(2n) {
+  background-color: black;
+}
