@@ -1,3 +1,10 @@
+header {
+  background-color: white;
+  align-self: flex-start;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
 body {
   background-color: gray;
   display: flex;
@@ -14,13 +21,6 @@ td {
   width: 200px;
   height: 200px;
   background-color: dodgerblue;
-}
-
-#rematch {
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
 }
 
 /*every other square is black*/

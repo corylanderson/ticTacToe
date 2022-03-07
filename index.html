@@ -9,26 +9,55 @@
 
     <title>Tic Tac Toe</title>
   </head>
-  <body>
-    <button id="rematch">Rematch</button>
 
+  <body>
+    <header>
+      <h1>Tic Tac Toe</h1>
+      <!-- user names -->
+      <form>
+        <div>
+          <label for="player1">Player 1</label>
+          <input
+            type="text"
+            placeholder="enter name"
+            name="player1"
+            id="player1"
+          />
+        </div>
+        <div>
+          <label for="player2">Player 2</label>
+          <input
+            type="text"
+            placeholder="enter name"
+            name="player2"
+            id="player2"
+          />
+        </div>
+        <input type="submit" value="start game" />
+      </form>
+
+      <div>
+        <div></div>
+        <button id="restartButton">I Want A Rematch</button>
+      </div>
+    </header>
     <!-- table creates the board -->
 
     <table id="table">
       <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td id="00"></td>
+        <td id="01"></td>
+        <td id="02"></td>
       </tr>
       <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td id="10"></td>
+        <td id="11"></td>
+        <td id="12"></td>
       </tr>
       <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td id="20"></td>
+        <td id="21"></td>
+        <td id="22"></td>
       </tr>
     </table>
   </body>
